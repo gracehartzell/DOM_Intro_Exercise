@@ -13,10 +13,12 @@ When the page loads:
 2. Set the background color of each `<li>` to `yellow`.
 
 3. Create an image tag, set its `src` attribute to `http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif`, and append the to the `#greeting` div.
-
+this
 4. Create and add a ul element to the end of the body with a class of "todo-items"
 
 5. Go through the array `['make coffee','eat donut','change diapers','drive to work']` and create an li element for each item e.g. `<li>make coffee</li>`
+
+My notes: this one took me a long time to get. I had the .forEach issues in order: 1. Could get each element to print to the console individually, 1.5. Could only get one bullet point, 2. Could get full array to print to the four points in the list. 3. everything disappeared. 4. Finally got it!
 
 6. Add each newly created li element to your ul of class "todo-items"
 
