@@ -1,36 +1,48 @@
 document.addEventListener("DOMContentLoaded", function() {
-    //Change the greeting from "Hello, There!" to "Hello, World!"
-    console.log("Hello, World!");
+    // 1. Change the #greeting from "Hello, There!" to "Hello, World!"
+    const greeting = document.getElementById('greeting');
+    greeting.textContent = "Hello, World!";
 
-    //Set the background color of each `<li>` to `yellow`
-    const listColor = document.getElementsByTagName('li');
+    // 2. Set the background color of each `<li>` to `yellow`
+    const drinks = document.getElementsByTagName('li');
 
-    for (let i = 0; i < listColor.length; i++) {
-        listColor[i].style.backgroundColor = "yellow"
+
+    for (const drink of drinks) {
+        drink.style.backgroundColor = "yellow";
     }
 
-    //Create an image tag, set its src attribute to link and append to the #greeting div
+    // 3. Create an image tag, set its src attribute to link and append to the #greeting div
 
-    let imgGreeting = document.createElement('img');imgGreeting.src = "http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif";
-    let greet = document.getElementById('greeting');
-    greet.appendChild(imgGreeting);
-
-
-    // Create and add a ul element to the end of the body with a class of "todo-items"
-    let newList = document.createElement('ul');
-    document.body.appendChild(newList);
+    const imgGreeting = document.createElement('img');
+    imgGreeting.src = "http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif";
+    greeting.appendChild(imgGreeting);
 
 
-    // Go through array and create li element for each item, e.g. <li>make coffee</li>
-    let array = ['make coffee','eat donut','change diapers','drive to work'];
+    // 4. Create and add a ul element to the end of the body with a class of "todo-items"
+    const todoList = document.createElement('ul');
+    todoList.setAttribute('class','todo-items')
+    document.body.appendChild(todoList);
+
+    // 5. Go through array and create li element for each item, e.g. <li>make coffee</li>
+    const items = ['make coffee','eat donut','change diapers','drive to work'];
     
-    array.forEach(function(element) {
+    items.forEach(function(element) {
         let li = document.createElement('li');
-        newList.appendChild(li);
+        todoList.appendChild(li);
         li.innerHTML += element;
       });
 
+    //   for (const item of items) {
+    //       const li = createElement('li');
+    //       li.textContent = item;
+    //   }
 
+    
+    // 6. Add each newly created li element to your ul of class "todo-items"
+      todoList.appendChild(li);
+      
+      
+      
 
 
 
