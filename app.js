@@ -1,3 +1,7 @@
+// THIS WAS MY EXPERIMENTAL, DAY ONE, UNFILTERED CODE. PLEASE VISIT APP-SUCCINCT FOR FULL SOLUTIONS. 
+// it's still ugly though...
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // 1. Change the #greeting from "Hello, There!" to "Hello, World!"
     const greeting = document.getElementById('greeting');
@@ -5,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 2. Set the background color of each `<li>` to `yellow`
     const drinks = document.getElementsByTagName('li');
-
 
     for (const drink of drinks) {
         drink.style.backgroundColor = "yellow";
@@ -27,23 +30,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const items = ['make coffee','eat donut','change diapers','drive to work'];
     
     items.forEach(function(element) {
-        let li = document.createElement('li');
+        const li = document.createElement('li');
         todoList.appendChild(li);
         li.innerHTML += element;
       });
 
-    //   for (const item of items) {
-    //       const li = createElement('li');
-    //       li.textContent = item;
-    //   }
 
-    
-    // 6. Add each newly created li element to your ul of class "todo-items"
-      todoList.appendChild(li);
+
+
       
-      
-      
-
-
-
 })

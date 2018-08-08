@@ -9,24 +9,25 @@ In a separate JS file:
 When the page loads:
 
 1. Change the greeting from "Hello, There!" to "Hello, World!".
-```
-1. Select the element using getElementById
-2. Change the message using idName.textContent = 'Hello, World!'
-```
+    ```
+    1. Select the element using getElementById
+    2. Change the message using idName.textContent = 'Hello, World!'
+    ```
 
 2. Set the background color of each `<li>` to `yellow`.
-```
-1. create variable to select ALL elements (make it plural so you know what you're dealing with!)
-2. Loop through the drinks
-3. Change the background color for them
-    a. for loop (commented out)
-    ```javascript
-    for (let i = 0; i < drinks.length; i++) {
-        drinks[i].style.backgroundColor = "yellow"
-    }
+    
     ```
-    b. for...of loop
-```
+    1. create variable to select ALL elements (make it plural so you know what you're dealing with!)
+    2. Loop through the drinks
+    3. Change the background color for them
+        a. for loop (commented out)
+        ```javascript
+        for (let i = 0; i < drinks.length; i++) {
+            drinks[i].style.backgroundColor = "yellow"
+        }
+        ```
+        b. for...of loop
+    ```
 
 3. Create an image tag, set its `src` attribute to `http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif`, and append the to the `#greeting` div.
 
@@ -36,9 +37,9 @@ When the page loads:
 
 5. Go through the array `['make coffee','eat donut','change diapers','drive to work']` and create an li element for each item e.g. `<li>make coffee</li>`
 
-```
-My notes: this one took me a long time to get. I had the .forEach issues in order: 1. Could get each element to print to the console individually, 1.5. Could only get one bullet point, 2. Could get full array to print to the four points in the list. 3. everything disappeared. 4. Finally
-```
+    ```
+    My notes: this one took me a long time to get. I had the .forEach issues in order: 1. Could get each element to print to the console individually, 1.5. Could only get one bullet point, 2. Could get full array to print to the four points in the list. 3. everything disappeared. 4. Finally got it... 
+    ```
 
 6. Add each newly created li element to your ul of class "todo-items"
 
